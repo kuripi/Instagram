@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		104E43E2DC2107068434202A /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A485886CBA763BD7FB3F18 /* Pods_Instagram.framework */; };
+		FCE48C272807CA0000050359 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE48C262807CA0000050359 /* Const.swift */; };
 		FCE741982805077900FF1449 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE741972805077900FF1449 /* AppDelegate.swift */; };
 		FCE7419A2805077900FF1449 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCE741992805077900FF1449 /* SceneDelegate.swift */; };
 		FCE7419F2805077900FF1449 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCE7419D2805077900FF1449 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 		68A485886CBA763BD7FB3F18 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CE52A0C657B570805AEB4E /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		A37CB83B4D4EF8D882B9C01C /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
+		FCE48C262807CA0000050359 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		FCE741942805077900FF1449 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCE741972805077900FF1449 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCE741992805077900FF1449 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 				A0CE52A0C657B570805AEB4E /* Pods-Instagram.debug.xcconfig */,
 				A37CB83B4D4EF8D882B9C01C /* Pods-Instagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -95,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				FCE741972805077900FF1449 /* AppDelegate.swift */,
+				FCE48C262807CA0000050359 /* Const.swift */,
 				FCE741992805077900FF1449 /* SceneDelegate.swift */,
 				FCE741AB2805081000FF1449 /* LoginViewController.swift */,
 				FCE741AD280508B000FF1449 /* HomeViewController.swift */,
@@ -234,6 +236,7 @@
 				FCE741AC2805081000FF1449 /* LoginViewController.swift in Sources */,
 				FCE741982805077900FF1449 /* AppDelegate.swift in Sources */,
 				FCE7419A2805077900FF1449 /* SceneDelegate.swift in Sources */,
+				FCE48C272807CA0000050359 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +389,7 @@
 				DEVELOPMENT_TEAM = HR62AKKQ2P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instagram/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "本アプリは、画像の投稿及び編集のため、カメラの使用許可を求めます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -415,6 +419,7 @@
 				DEVELOPMENT_TEAM = HR62AKKQ2P;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Instagram/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "本アプリは、画像の投稿及び編集のため、カメラの使用許可を求めます。";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
