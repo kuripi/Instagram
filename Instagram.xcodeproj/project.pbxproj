@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		104E43E2DC2107068434202A /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68A485886CBA763BD7FB3F18 /* Pods_Instagram.framework */; };
-		FC23B714280AE39800843EBA /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23B713280AE39800843EBA /* CommentViewController.swift */; };
+		FC23B716280AFD6100843EBA /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC23B715280AFD6100843EBA /* CommentViewController.swift */; };
 		FC7CED3A280A4C120045EDB5 /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7CED39280A4C120045EDB5 /* PostData.swift */; };
 		FC7CED3D280A4C780045EDB5 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7CED3B280A4C780045EDB5 /* PostTableViewCell.swift */; };
 		FC7CED3E280A4C780045EDB5 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC7CED3C280A4C780045EDB5 /* PostTableViewCell.xib */; };
@@ -31,7 +31,7 @@
 		68A485886CBA763BD7FB3F18 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0CE52A0C657B570805AEB4E /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		A37CB83B4D4EF8D882B9C01C /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
-		FC23B713280AE39800843EBA /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		FC23B715280AFD6100843EBA /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		FC7CED39280A4C120045EDB5 /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 		FC7CED3B280A4C780045EDB5 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		FC7CED3C280A4C780045EDB5 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				FCE741972805077900FF1449 /* AppDelegate.swift */,
-				FC23B713280AE39800843EBA /* CommentViewController.swift */,
+				FC23B715280AFD6100843EBA /* CommentViewController.swift */,
 				FC7CED3B280A4C780045EDB5 /* PostTableViewCell.swift */,
 				FC7CED3C280A4C780045EDB5 /* PostTableViewCell.xib */,
 				FC7CED39280A4C120045EDB5 /* PostData.swift */,
@@ -249,7 +249,7 @@
 				FCE741B4280509AB00FF1449 /* SettingViewController.swift in Sources */,
 				FC7CED3A280A4C120045EDB5 /* PostData.swift in Sources */,
 				FCE741AC2805081000FF1449 /* LoginViewController.swift in Sources */,
-				FC23B714280AE39800843EBA /* CommentViewController.swift in Sources */,
+				FC23B716280AFD6100843EBA /* CommentViewController.swift in Sources */,
 				FCE741982805077900FF1449 /* AppDelegate.swift in Sources */,
 				FCE7419A2805077900FF1449 /* SceneDelegate.swift in Sources */,
 				FCE48C272807CA0000050359 /* Const.swift in Sources */,

@@ -78,8 +78,20 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         return cell
     }
 
+    // コメントボタンクリック時に呼ばれるメソッド
     @objc func handleCommentButton(_ sender: UIButton, forEvent event: UIEvent) {
-        print("DEBUG_PRINT: commentボタンがタップされました。")        
+        print("DEBUG_PRINT: commentボタンがタップされました。")
+
+        let touch = event.allTouches?.first
+        let point = touch!.location(in: self.tableView)
+        let indexPath = tableView.indexPathForRow(at: point)
+        // 配列からタップされたインデックスのデータを取り出す
+        let postData = postArray[indexPath!.row]
+        // コメント投稿画面へ遷移
+        let CommentViewController = self.storyboard?.instantiateViewController(withIdentifier: "Comment") as! CommentViewController
+        // postDataをコメント画面へ渡す
+        CommentViewController.postDataRecive = postData
+        self.present(CommentViewController, animated: true, completion: nil)
     }
     
     // セル内のボタンがタップされた時に呼ばれるメソッド
@@ -108,8 +120,6 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             // likesに更新データを書き込む
             let postRef = Firestore.firestore().collection(Const.PostPath).document(postData.id)
             postRef.updateData(["likes": updateValue])
-            // テスト的
-            // postRef.updateData(["comment": "コメント"])
         }
     }
 }

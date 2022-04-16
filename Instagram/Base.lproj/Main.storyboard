@@ -97,10 +97,10 @@
             </objects>
             <point key="canvasLocation" x="1757.9710144927537" y="135.9375"/>
         </scene>
-        <!--Commentiew Controller-->
+        <!--Comment View Controller-->
         <scene sceneID="sj4-LK-Yas">
             <objects>
-                <viewController id="z6X-TW-7Uk" customClass="CommentiewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Comment" id="z6X-TW-7Uk" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="twO-ah-5wk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -112,6 +112,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="handleCommentText:" destination="z6X-TW-7Uk" eventType="editingChanged" id="ZiT-3F-elP"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eu5-OM-IFT">
                                 <rect key="frame" x="57" y="168" width="300" height="40"/>
@@ -120,6 +123,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="投稿" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handlePostButton:" destination="z6X-TW-7Uk" eventType="touchUpInside" id="4Xn-jy-rbL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RX-8s-Iht">
                                 <rect key="frame" x="57" y="218" width="300" height="40"/>
@@ -128,6 +134,9 @@
                                 </constraints>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="キャンセル" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="handleCancelButton:" destination="z6X-TW-7Uk" eventType="touchUpInside" id="slt-V3-UG3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="xqC-RO-GXM"/>
@@ -141,6 +150,10 @@
                             <constraint firstItem="Eu5-OM-IFT" firstAttribute="centerX" secondItem="twO-ah-5wk" secondAttribute="centerX" id="zqj-1U-U0W"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="commentText" destination="9sB-cd-smK" id="3v1-Dl-ANk"/>
+                        <outlet property="postBtn" destination="Eu5-OM-IFT" id="2ub-KA-DvN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hAF-e8-2I1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
