@@ -55,7 +55,7 @@
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1B-bc-sOa">
                         <rect key="frame" x="126" y="317" width="46.5" height="40"/>
                         <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="plain" image="text.bubble.fill" catalog="system" title=""/>
+                        <buttonConfiguration key="configuration" style="plain" image="text.bubble" catalog="system" title=""/>
                     </button>
                 </subviews>
                 <constraints>
@@ -94,6 +94,6 @@
     </objects>
     <resources>
         <image name="like_none" width="40" height="40"/>
-        <image name="text.bubble.fill" catalog="system" width="128" height="110"/>
+        <image name="text.bubble" catalog="system" width="128" height="110"/>
     </resources>
 </document>
