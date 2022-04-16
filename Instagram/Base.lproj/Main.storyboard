@@ -97,6 +97,55 @@
             </objects>
             <point key="canvasLocation" x="1757.9710144927537" y="135.9375"/>
         </scene>
+        <!--Commentiew Controller-->
+        <scene sceneID="sj4-LK-Yas">
+            <objects>
+                <viewController id="z6X-TW-7Uk" customClass="CommentiewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="twO-ah-5wk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="コメント" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9sB-cd-smK">
+                                <rect key="frame" x="57" y="124" width="300" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="0xs-bj-4k4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eu5-OM-IFT">
+                                <rect key="frame" x="57" y="168" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="mgu-sE-HTD"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="投稿" backgroundImage="btn"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9RX-8s-Iht">
+                                <rect key="frame" x="57" y="218" width="300" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="mtn-sq-Jat"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="キャンセル" backgroundImage="btn"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="xqC-RO-GXM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9sB-cd-smK" firstAttribute="centerX" secondItem="twO-ah-5wk" secondAttribute="centerX" id="4JA-Xw-VT4"/>
+                            <constraint firstItem="9sB-cd-smK" firstAttribute="top" secondItem="xqC-RO-GXM" secondAttribute="top" constant="80" id="7uQ-xH-Ay8"/>
+                            <constraint firstItem="9RX-8s-Iht" firstAttribute="centerX" secondItem="twO-ah-5wk" secondAttribute="centerX" id="F6l-9y-FB1"/>
+                            <constraint firstItem="9RX-8s-Iht" firstAttribute="top" secondItem="Eu5-OM-IFT" secondAttribute="bottom" constant="10" id="Upg-Dm-kDO"/>
+                            <constraint firstItem="Eu5-OM-IFT" firstAttribute="top" secondItem="9sB-cd-smK" secondAttribute="bottom" constant="10" id="b0j-zM-Cot"/>
+                            <constraint firstItem="Eu5-OM-IFT" firstAttribute="centerX" secondItem="twO-ah-5wk" secondAttribute="centerX" id="zqj-1U-U0W"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hAF-e8-2I1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2611.594202898551" y="128.57142857142856"/>
+        </scene>
         <!--ホーム-->
         <scene sceneID="Psk-bd-WKE">
             <objects>
