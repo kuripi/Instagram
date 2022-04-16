@@ -37,6 +37,16 @@ class PostTableViewCell: UITableViewCell {
          // キャプションの表示
          self.captionLabel.text = "\(postData.name!) : \(postData.caption!)"
 
+         // コメントの表示
+         /*self.captionLabel.text = "\(postData.name!) : \(postData.comment!)"
+         
+         if let comment = postData.comment {
+             self.captionLabel.text = "\(postData.name!) : \(comment)"
+         }
+         else {
+             self.captionLabel.text = "\(postData.name!) : "
+         }*/
+         
          // 日時の表示
          self.dateLabel.text = ""
          if let date = postData.date {
