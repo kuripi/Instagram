@@ -101,6 +101,8 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
             // likesに更新データを書き込む
             let postRef = Firestore.firestore().collection(Const.PostPath).document(postData.id)
             postRef.updateData(["likes": updateValue])
+            // テスト的
+            // postRef.updateData(["comment": "コメント"])
         }
     }
 }

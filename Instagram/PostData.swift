@@ -12,6 +12,7 @@ class PostData: NSObject {
     var id: String
     var name: String?
     var caption: String?
+    var comment: String?    // コメント用
     var date: Date?
     var likes: [String] = []
     var isLiked: Bool = false
@@ -22,6 +23,9 @@ class PostData: NSObject {
         let postDic = document.data()
 
         self.name = postDic["name"] as? String
+
+        // コメント用
+        self.comment = postDic["comment"] as? String
 
         self.caption = postDic["caption"] as? String
 
